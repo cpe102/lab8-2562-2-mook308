@@ -3,7 +3,7 @@ using namespace std;
 
 //Write the function printO() here
 void printO(int N,int M){
-	if(N==0||M==0)cout << "Invalid input";
+	if(N<=0||M<=0)cout << "Invalid input";
 	else for(int i=N;i>0;i--){
 		for(int j=M;j>0;j--){
 			cout << "O";
@@ -28,7 +28,7 @@ int main(){
 	printO(0,3);
 	cout << "\n";	
 	
-	printO(7,-1);
+	printO(7,0);
 	cout << "\n";	
 	
 	return 0;
